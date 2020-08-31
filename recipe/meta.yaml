@@ -1,5 +1,5 @@
 {% set name = "pynput" %}
-{% set version = "1.6.8" %}
+{% set version = "1.7.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 68c1863d6a1520b44b6a915e866cbfa1b8d127aef9289f25183c93e28ee5049a
+  sha256: 5a5598bfb14322eff980ac6ca820635fce9028faa4f64a8e1581243aaf6785ee
 
 build:
   number: 0
@@ -17,10 +17,10 @@ requirements:
     - python
     - pip
     - setuptools-lint >=0.5
-    - sphinx 
+    - sphinx
     - wrapt 1.11.*
   run:
-    - python 
+    - python
     - six
     - setuptools-lint >=0.5
     - sphinx
@@ -37,7 +37,7 @@ about:
   license: LGPL-3.0-only
   license_family: LGPL
   license_file: LICENSE # no license file packaged with source, issue here: https://github.com/moses-palmer/pynput/issues/241
-  summary: 'This library allows you to control and monitor input devices.'
+  summary: This library allows you to control and monitor input devices.
   doc_url: https://pynput.readthedocs.io/en/latest/
   dev_url: https://github.com/moses-palmer/pynput
 
