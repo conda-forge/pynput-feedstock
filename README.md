@@ -5,11 +5,13 @@ Home: https://github.com/moses-palmer/pynput
 
 Package license: LGPL-3.0-only
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/pynput-feedstock/blob/master/LICENSE.txt)
 
 Summary: This library allows you to control and monitor input devices.
 
+Development: https://github.com/moses-palmer/pynput
 
+Documentation: https://pynput.readthedocs.io/en/latest/
 
 Current build status
 ====================
@@ -50,6 +52,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pynput-feedstock?branchName=master&jobName=linux&configuration=linux_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
@@ -71,6 +80,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pynput-feedstock?branchName=master&jobName=osx&configuration=osx_64_python3.9.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_python3.6.____cpython</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
@@ -89,6 +105,13 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pynput-feedstock?branchName=master&jobName=win&configuration=win_64_python3.8.____cpython" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_python3.9.____cpython</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=9486&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pynput-feedstock?branchName=master&jobName=win&configuration=win_64_python3.9.____cpython" alt="variant">
                 </a>
               </td>
             </tr>
