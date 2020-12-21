@@ -1,5 +1,5 @@
 {% set name = "pynput" %}
-{% set version = "1.7.1" %}
+{% set version = "1.7.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5a5598bfb14322eff980ac6ca820635fce9028faa4f64a8e1581243aaf6785ee
+  sha256: dd8b1ff2451e2b76c753e115ab20b6cfa73801c395f22987474f942726558fec
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
