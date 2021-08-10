@@ -1,5 +1,5 @@
 {% set name = "pynput" %}
-{% set version = "1.7.1" %}
+{% set version = "1.7.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 5a5598bfb14322eff980ac6ca820635fce9028faa4f64a8e1581243aaf6785ee
+  sha256: ebd3508040e0a59a7078acda3ecda7b01c81d3012c054d600af809ace749ac55
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -43,6 +43,7 @@ about:
 
 extra:
   recipe-maintainers:
+    - mxr-conda
     - ndmaxar
     - rluria14
     - oblute
