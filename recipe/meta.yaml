@@ -21,7 +21,7 @@ requirements:
     - wrapt 1.11.*
   run:
     - python
-    - six
+    - six >=1.11
     - setuptools-lint >=0.5
     - sphinx
     - wrapt 1.11.*
