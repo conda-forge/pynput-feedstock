@@ -16,6 +16,7 @@ requirements:
   host:
     - python
     - pip
+    - six 
     - setuptools-lint >=0.5
     - sphinx
     - wrapt 1.11.*
