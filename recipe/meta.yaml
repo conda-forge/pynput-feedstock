@@ -18,16 +18,12 @@ requirements:
     - pip
     - six
     - setuptools-lint >=0.5
-    - sphinx
-    - wrapt 1.11.*
+    - sphinx >= 1.13.1
   run:
     - python
     - six
-    - setuptools-lint >=0.5
-    - sphinx
-    - wrapt 1.11.*
-    - python-xlib
-    - pyobjc-framework-quartz  # [osx]
+    - python-xlib >= 0.17 # [linux]
+    - pyobjc-framework-quartz >= 8.0  # [osx]
 
 test:
   commands:
