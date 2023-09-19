@@ -19,13 +19,11 @@ requirements:
     - six 
     - setuptools-lint >=0.5
     - sphinx
-    - wrapt 1.11.*
   run:
     - python
     - six
     - setuptools-lint >=0.5
     - sphinx
-    - wrapt 1.11.*
     - python-xlib
     - pyobjc-framework-quartz  # [osx]
 
