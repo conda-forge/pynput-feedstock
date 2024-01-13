@@ -1,5 +1,5 @@
 {% set name = "pynput" %}
-{% set version = "1.7.3" %}
+{% set version = "1.7.6" %}
 
 package:
   name: {{ name|lower }}
@@ -7,26 +7,26 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4e50b1a0ab86847e87e58f6d1993688b9a44f9f4c88d4712315ea8eb552ef828
+  sha256: 3a5726546da54116b687785d38b1db56997ce1d28e53e8d22fc656d8b92e533c
 
 build:
-  number: 0
+  number: 1
 
 requirements:
+  build:
+    - python                                 # [build_platform != target_platform]
+    - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - python
     - pip
-    - six 
+    - six
     - setuptools-lint >=0.5
-    - sphinx
-    - wrapt 1.11.*
+    - sphinx >=1.3.1
   run:
     - python
     - six
-    - setuptools-lint >=0.5
-    - sphinx
-    - wrapt 1.11.*
     - python-xlib
+    - pyobjc-framework-applicationservices  # [osx]
     - pyobjc-framework-quartz  # [osx]
 
 test:
