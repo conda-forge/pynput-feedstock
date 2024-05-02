@@ -10,7 +10,7 @@ source:
   sha256: 3a5726546da54116b687785d38b1db56997ce1d28e53e8d22fc656d8b92e533c
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   build:
@@ -48,3 +48,4 @@ extra:
     - ndmaxar
     - rluria14
     - oblute
+    - Tobias-Fischer
