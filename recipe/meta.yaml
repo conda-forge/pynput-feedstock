@@ -1,16 +1,16 @@
 {% set name = "pynput" %}
-{% set version = "1.7.6" %}
+{% set version = "1.7.7" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a5726546da54116b687785d38b1db56997ce1d28e53e8d22fc656d8b92e533c
+  url: https://github.com/moses-palmer/{{ name }}/archive/v{{ version }}.tar.gz
+  sha256: e042e70933938b3b1226aee936d60acf03f43d52e83d7abbd728e8bab2deeacd
 
 build:
-  number: 3
+  number: 0
 
 requirements:
   build:
@@ -22,10 +22,12 @@ requirements:
     - six
     - setuptools-lint >=0.5
     - sphinx >=1.3.1
+    - twine >=4.0
   run:
     - python
     - six
     - python-xlib
+    - evdev  # [linux]
     - pyobjc-framework-applicationservices  # [osx]
     - pyobjc-framework-quartz  # [osx]
 
@@ -49,3 +51,4 @@ extra:
     - rluria14
     - oblute
     - Tobias-Fischer
+    - ehfd
