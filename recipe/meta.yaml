@@ -10,7 +10,7 @@ source:
   sha256: e042e70933938b3b1226aee936d60acf03f43d52e83d7abbd728e8bab2deeacd
 
 build:
-  number: 0
+  number: 1
 
 requirements:
   build:
@@ -19,6 +19,7 @@ requirements:
   host:
     - python
     - pip
+    - setuptools
     - six
     - setuptools-lint >=0.5
     - sphinx >=1.3.1
