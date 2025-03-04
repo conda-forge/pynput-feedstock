@@ -1,5 +1,5 @@
 {% set name = "pynput" %}
-{% set version = "1.7.8" %}
+{% set version = "1.8.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/moses-palmer/{{ name }}/archive/v{{ version }}.tar.gz
-  sha256: f1ce5ae1cc94c6520003e5dee71a6f22d2f0690499f13a30a814cdeb6fc4d37d
+  sha256: 8f654f53e63760b68cfd75b01956923ce86b4aba1fb87e8f07a72f65d56f7097
 
 build:
   number: 0
