@@ -1,0 +1,25 @@
+From 0000000000000000000000000000000000000000 Mon Sep 17 00:00:00 2001
+From: Seungmin Kim <8457324+ehfd@users.noreply.github.com>
+Date: Wed, 7 Oct 2026 20:42:51 +0900
+Subject: [PATCH] Do not request lint, docs and upload tools at build time
+
+setup_requires lists setuptools-lint, sphinx and twine, which are only
+used for the lint, build_sphinx and upload commands. Building the wheel
+does not need them (or six), and setuptools would otherwise try to fetch
+them when they are missing from the build environment.
+---
+ setup.py | 1 -
+ 1 file changed, 1 deletion(-)
+
+diff --git a/setup.py b/setup.py
+index ec68b4e..2b45781 100644
+--- a/setup.py
++++ b/setup.py
+@@ -92,7 +92,6 @@ setuptools.setup(
+     long_description=README + '\n\n' + CHANGES,
+ 
+     install_requires=RUNTIME_PACKAGES,
+-    setup_requires=RUNTIME_PACKAGES + SETUP_PACKAGES,
+     extras_require=EXTRA_PACKAGES,
+ 
+     author=INFO['author'],
